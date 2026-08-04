@@ -110,7 +110,7 @@ pip install -r requirements.txt
 
 ### Step 3: Download the Datasets
 ```
-1.Go to the official NYC TLC Trip Record Data page[https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page].
+1.Go to the official NYC TLC Trip Record Data page(https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 2.Download the 2025 Yellow Taxi trip record Parquet files (e.g., yellow_tripdata_2025-01.parquet through yellow_tripdata_2025-06.parquet).
 3.Place all raw .parquet files in your project root directory (or inside a designated data/ folder).
 ```

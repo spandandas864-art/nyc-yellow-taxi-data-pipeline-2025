@@ -1,6 +1,6 @@
 # NYC Yellow Taxi Data Processing, Feature Engineering & Analytics Pipeline (2025)
 
-[![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?logo=tableau&logoColor=white)]([YOUR_TABLEAU_PUBLIC_LINK_HERE](https://public.tableau.com/app/profile/spandan.das5845/viz/NYCTaxi2025Jan-June/CBDanalysis))
+[![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?logo=tableau&logoColor=white)]([[YOUR_TABLEAU_PUBLIC_LINK_HERE]](https://public.tableau.com/views/NYCTaxi2025Jan-June/CBDanalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Wrangling-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![SciPy](https://img.shields.io/badge/SciPy-Hypothesis%20Testing-8CAAE6?logo=scipy&logoColor=white)](https://scipy.org/)
@@ -11,7 +11,7 @@ An end-to-end data engineering, cleaning, feature engineering, and statistical a
 
 ## Tableau Dashboard Overview
 Access the interactive dashboard showing key ride trends, fare distributions, peak travel hours, and tip analytics:
-**[View Interactive Tableau Dashboard]([YOUR_TABLEAU_PUBLIC_LINK_HERE](https://public.tableau.com/app/profile/spandan.das5845/viz/NYCTaxi2025Jan-June/CBDanalysis))**
+**[View Interactive Tableau Dashboard]([[YOUR_TABLEAU_PUBLIC_LINK_HERE]](https://public.tableau.com/views/NYCTaxi2025Jan-June/CBDanalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))**
 
 ---
 

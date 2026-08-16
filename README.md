@@ -35,13 +35,12 @@ The dataset comprises 6 months of 2025 NYC Yellow Taxi trip records published by
 ## Core Business Questions & Hypotheses
 
 ### Pillar A: Spatial Demand & Congestion Dynamics
-* **Q1. Peak Hour Bottlenecks**: Which pickup taxi zones (`PULocationID`) experience the highest trip density during weekday morning (7 AM – 10 AM) vs. evening rush hours (4 PM – 7 PM)?
-* **Q2. Airport Corridor Efficiency**: What is the average trip duration and speed (mph) between Midtown Manhattan and JFK/LaGuardia airports across rate codes (`RatecodeID`)?
+* **Q1. Peak Hour Bottlenecks**: Which pickup taxi zones (`PULocationID`) experience the highest trip density during weekday morning (`7 AM – 10 AM`) vs. evening rush hours (`4 PM – 7 PM`)?
+* **Q2. Airport Corridor Efficiency**: What is the average trip duration and speed (`mph`) between Midtown Manhattan and JFK/LaGuardia airports across rate codes (`RatecodeID`)?
 * **Q3. Congestion Fee Friction**: How has the introduction of CBD congestion surcharges impacted total trip volume in lower Manhattan?
 
 ### Pillar B: Revenue & Tipping Drivers
-* **Q4. Payment Method & Tip Rates**: What is the average tip percentage ($\frac{\text{tip\_amount}}{\text{fare\_amount}}$) for credit card transactions vs. cash payments across short (<2 miles) vs. long-haul trips?
-* **Q5. Fare Prediction Accuracy**: Can trip distance, passenger count, and pickup location reliably predict total fare amount ($\text{total\_amount}$) using regression modeling?
+* **Q4. Payment Method & Tip Rates**: What is the average tip percentage for credit card transactions vs. cash payments across short (`<2 miles`) vs. long-haul trips?
 
 ---
 

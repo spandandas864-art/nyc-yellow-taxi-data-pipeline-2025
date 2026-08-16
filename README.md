@@ -22,7 +22,33 @@ The dataset comprises 6 months of 2025 NYC Yellow Taxi trip records published by
 * **Initial File Memory Footprint:** ~3.3+ GB
 * **Optimized Dataset Memory:** ~1.4+ GB (via datatype casting & memory tuning)
 
+| Metric / Dimension | Column Field | Operational Context |
+| :--- | :--- | :--- |
+| **Primary Identifier** | `VendorID`, `tpep_pickup_datetime` | TPEP provider records & timestamp tracking |
+| **Geographic Coverage** | 265 TLC Taxi Zones | Pickup (`PULocationID`) & Dropoff (`DOLocationID`) |
+| **Core Financials** | `fare_amount`, `tip_amount`, `tolls_amount` | Itemized fares, surcharges, and payment types |
+| **Fulfillment Metrics** | `trip_distance`, `passenger_count` | Metered mileage and passenger capacity tracking |
+| **Surcharges & Fees** | `mta_tax`, `extra`, `cbd_congestion_fee` | Rush hour, night, and CBD congestion fees |
+
 ---
+
+## Core Business Questions & Hypotheses
+
+### Pillar A: Spatial Demand & Congestion Dynamics
+* **Q1. Peak Hour Bottlenecks**: Which pickup taxi zones (`PULocationID`) experience the highest trip density during weekday morning (7 AM – 10 AM) vs. evening rush hours (4 PM – 7 PM)?
+* **Q2. Airport Corridor Efficiency**: What is the average trip duration and speed (mph) between Midtown Manhattan and JFK/LaGuardia airports across rate codes (`RatecodeID`)?
+* **Q3. Congestion Fee Friction**: How has the introduction of CBD congestion surcharges impacted total trip volume in lower Manhattan?
+
+### Pillar B: Revenue & Tipping Drivers
+* **Q4. Payment Method & Tip Rates**: What is the average tip percentage ($\frac{\text{tip\_amount}}{\text{fare\_amount}}$) for credit card transactions vs. cash payments across short (<2 miles) vs. long-haul trips?
+* **Q5. Fare Prediction Accuracy**: Can trip distance, passenger count, and pickup location reliably predict total fare amount ($\text{total\_amount}$) using regression modeling?
+
+---
+
+## 3. Analytical Methodologies & Tools
+* **Data Processing**: `pandas` for multi-gigabyte Parquet transactional processing.
+* **Geospatial Analytics**: Mapped TLC Taxi Zone shapefiles for spatial joins & zone-to-zone routing density.
+* **Exploratory Analytics**: `matplotlib`, `seaborn` for visual temporal fare & distance distributions.
 
 ## Pipeline Architecture & Workflow
 
